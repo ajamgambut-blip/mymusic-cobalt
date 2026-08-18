@@ -9,5 +9,5 @@ services:
       - "9000:9000"
 
     environment:
-      API_URL: "https://GANTI-NANTI.onrender.com/"
-      CORS_WILDCARD: "1"
+  API_URL: "https://mymusic-cobalt.onrender.com/"
+  CORS_WILDCARD: "1"

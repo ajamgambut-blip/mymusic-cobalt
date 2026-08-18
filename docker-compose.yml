@@ -1,0 +1,12 @@
+services:
+  cobalt:
+    image: ghcr.io/imputnet/cobalt:11
+    init: true
+    read_only: true
+    restart: unless-stopped
+
+    ports:
+      - "9000:9000"
+
+    environment:
+      API_URL: "https://GANTI-DENGAN-URL-RENDER-KAMU/"

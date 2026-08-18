@@ -1,13 +1,10 @@
 services:
   cobalt:
     image: ghcr.io/imputnet/cobalt:11
-    init: true
-    read_only: true
+    container_name: mymusic-cobalt
     restart: unless-stopped
-
     ports:
-      - "9000:9000"
-
+      - "8080:8080"
     environment:
-  API_URL: "https://mymusic-cobalt.onrender.com/"
-  CORS_WILDCARD: "1"
+      - CORS_WILDCARD=1
+      - LISTEN_PORT=8080

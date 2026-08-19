@@ -1,0 +1,9 @@
+# Cookie & authentication secrets
+cookies.json
+*.cookie
+.env
+.env.*
+
+# Local / temporary files
+node_modules/
+.DS_Store
